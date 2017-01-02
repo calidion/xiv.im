@@ -22070,17 +22070,17 @@ page-about h2 {
   text-align: right;
 }
 
-ion-title {
+page-home ion-title {
   position: relative;
 }
 
-.tools {
+page-home .tools {
   position: absolute;
   right: 0px;
   top: 0px;
 }
 
-.tools ion-icon {
+page-home .tools ion-icon {
   padding: 10px;
   font-size: 20px;
 }
