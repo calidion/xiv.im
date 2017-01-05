@@ -22070,6 +22070,161 @@ page-about h2 {
   text-align: right;
 }
 
+page-chat ion-footer {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: #ccc;
+  bottom: 0px;
+}
+
+page-chat ion-content .time {
+  text-align: center;
+}
+
+page-chat ion-content .time p {
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 0;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  color: #FFF;
+  border-radius: 4px;
+}
+
+page-chat ion-content .from,
+page-chat ion-content .to {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 6;
+  -ms-flex: 6;
+  flex: 6;
+  margin: 5px -10px;
+}
+
+page-chat ion-content .from .avater,
+page-chat ion-content .to .avater {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+
+page-chat ion-content .from .avater img,
+page-chat ion-content .to .avater img {
+  width: 42px;
+  height: 42px;
+}
+
+page-chat ion-content .from .message,
+page-chat ion-content .to .message {
+  -webkit-flex: 5;
+  -ms-flex: 5;
+  flex: 5;
+  text-align: left;
+  overflow: auto;
+}
+
+page-chat ion-content .from .message .sender,
+page-chat ion-content .to .message .sender {
+  padding: 0 5px 8px 0px;
+  color: #ccc;
+}
+
+page-chat ion-content .from .message .document,
+page-chat ion-content .to .message .document {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f8f8f8;
+}
+
+page-chat ion-content .from .message .document pre,
+page-chat ion-content .to .message .document pre {
+  margin: 0px;
+  width: 100%;
+}
+
+page-chat ion-content .to .message .document {
+  background-color: #6088ca;
+  color: #FFF;
+}
+
+page-chat .toolbar-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+}
+
+page-chat .toolbar-content .toolbar {
+  padding: 4px;
+  height: 50px;
+}
+
+page-chat .toolbar-content .input {
+  -webkit-flex: 7;
+  -ms-flex: 7;
+  flex: 7;
+  display: table-cell;
+  vertical-align: middle;
+  margin-top: auto;
+}
+
+page-chat .toolbar-content .input textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 8px;
+  width: 100%;
+}
+
+page-chat .toolbar-content .send {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-top: 5px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+page-chat .toolbar-content .text-input {
+  margin-left: 3px;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  height: 32px;
+}
+
+page-chat .toolbar-content [ion-button] {
+  height: 35px;
+}
+
+page-chat ion-toolbar {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+friend-item .img-loaded + ion-spinner {
+  display: none;
+}
+
+friend-item ion-thumbnail {
+  position: relative;
+}
+
+friend-item ion-thumbnail ion-spinner.abs {
+  display: absolute;
+  top: 0;
+  left: 0;
+}
+
 page-home ion-title {
   position: relative;
 }
@@ -22083,6 +22238,10 @@ page-home .tools {
 page-home .tools ion-icon {
   padding: 10px;
   font-size: 20px;
+}
+
+page-home .chatboxes {
+  margin: -1px 0 0 0;
 }
 
 page-user-details .back {
