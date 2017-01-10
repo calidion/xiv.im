@@ -22070,6 +22070,124 @@ page-about h2 {
   text-align: right;
 }
 
+page-chat {
+  /**
+ * GHColors theme by Avi Aryan (http://aviaryan.in)
+ * Inspired by Github syntax coloring
+ */
+  /* Code blocks */
+  /* Inline code */
+}
+
+page-chat code[class*="language-"],
+page-chat pre[class*="language-"] {
+  color: #393A34;
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  font-size: 0.95em;
+  line-height: 1.2em;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+page-chat pre[class*="language-"]::-moz-selection, page-chat pre[class*="language-"] ::-moz-selection,
+page-chat code[class*="language-"]::-moz-selection, page-chat code[class*="language-"] ::-moz-selection {
+  background: #b3d4fc;
+}
+
+page-chat pre[class*="language-"]::selection, page-chat pre[class*="language-"] ::selection,
+page-chat code[class*="language-"]::selection, page-chat code[class*="language-"] ::selection {
+  background: #b3d4fc;
+}
+
+page-chat pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border: 1px solid #dddddd;
+  background-color: white;
+}
+
+page-chat :not(pre) > code[class*="language-"] {
+  padding: .2em;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background: #f8f8f8;
+  border: 1px solid #dddddd;
+}
+
+page-chat .token.comment,
+page-chat .token.prolog,
+page-chat .token.doctype,
+page-chat .token.cdata {
+  color: #999988;
+  font-style: italic;
+}
+
+page-chat .token.namespace {
+  opacity: .7;
+}
+
+page-chat .token.string,
+page-chat .token.attr-value {
+  color: #e3116c;
+}
+
+page-chat .token.punctuation,
+page-chat .token.operator {
+  color: #393A34;
+  /* no highlight */
+}
+
+page-chat .token.entity,
+page-chat .token.url,
+page-chat .token.symbol,
+page-chat .token.number,
+page-chat .token.boolean,
+page-chat .token.variable,
+page-chat .token.constant,
+page-chat .token.property,
+page-chat .token.regex,
+page-chat .token.inserted {
+  color: #36acaa;
+}
+
+page-chat .token.atrule,
+page-chat .token.keyword,
+page-chat .token.attr-name,
+page-chat .language-autohotkey .token.selector {
+  color: #00a4db;
+}
+
+page-chat .token.function,
+page-chat .token.deleted,
+page-chat .language-autohotkey .token.tag {
+  color: #9a050f;
+}
+
+page-chat .token.tag,
+page-chat .token.selector,
+page-chat .language-autohotkey .token.keyword {
+  color: #00009f;
+}
+
+page-chat .token.important,
+page-chat .token.function,
+page-chat .token.bold {
+  font-weight: bold;
+}
+
+page-chat .token.italic {
+  font-style: italic;
+}
+
 page-chat ion-footer {
   position: fixed;
   height: 50px;
@@ -22137,17 +22255,68 @@ page-chat ion-content .to .message .document {
   border-radius: 10px;
   padding: 15px;
   background-color: #f8f8f8;
+  margin: 5px;
 }
 
 page-chat ion-content .from .message .document pre,
 page-chat ion-content .to .message .document pre {
   margin: 0px;
   width: 100%;
+  border-radius: 10px;
+}
+
+page-chat ion-content .from .message .document pre p,
+page-chat ion-content .to .message .document pre p {
+  margin: 0px;
+}
+
+page-chat ion-content .from .message .document {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+page-chat ion-content .from .message .document:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  width: 0;
+  height: 0;
+  left: -10px;
+  border-top: 5px solid transparent;
+  border-right: 10px solid #f8f8f8;
+  border-bottom: 5px solid transparent;
+  top: 8px;
+}
+
+page-chat ion-content .to .message {
+  text-align: right;
 }
 
 page-chat ion-content .to .message .document {
+  position: relative;
   background-color: #6088ca;
   color: #FFF;
+  text-align: right;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+page-chat ion-content .to .message .document:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  width: 0;
+  height: 0;
+  right: -10px;
+  border-top: 5px solid transparent;
+  border-left: 10px solid #6088ca;
+  border-bottom: 5px solid transparent;
+  top: 8px;
 }
 
 page-chat .toolbar-content {
@@ -22209,6 +22378,124 @@ page-chat ion-toolbar {
   bottom: 0px;
   left: 0px;
   right: 0px;
+}
+
+message-item {
+  /**
+ * GHColors theme by Avi Aryan (http://aviaryan.in)
+ * Inspired by Github syntax coloring
+ */
+  /* Code blocks */
+  /* Inline code */
+}
+
+message-item code[class*="language-"],
+message-item pre[class*="language-"] {
+  color: #393A34;
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  font-size: 0.95em;
+  line-height: 1.2em;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+message-item pre[class*="language-"]::-moz-selection, message-item pre[class*="language-"] ::-moz-selection,
+message-item code[class*="language-"]::-moz-selection, message-item code[class*="language-"] ::-moz-selection {
+  background: #b3d4fc;
+}
+
+message-item pre[class*="language-"]::selection, message-item pre[class*="language-"] ::selection,
+message-item code[class*="language-"]::selection, message-item code[class*="language-"] ::selection {
+  background: #b3d4fc;
+}
+
+message-item pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border: 1px solid #dddddd;
+  background-color: white;
+}
+
+message-item :not(pre) > code[class*="language-"] {
+  padding: .2em;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background: #f8f8f8;
+  border: 1px solid #dddddd;
+}
+
+message-item .token.comment,
+message-item .token.prolog,
+message-item .token.doctype,
+message-item .token.cdata {
+  color: #999988;
+  font-style: italic;
+}
+
+message-item .token.namespace {
+  opacity: .7;
+}
+
+message-item .token.string,
+message-item .token.attr-value {
+  color: #e3116c;
+}
+
+message-item .token.punctuation,
+message-item .token.operator {
+  color: #393A34;
+  /* no highlight */
+}
+
+message-item .token.entity,
+message-item .token.url,
+message-item .token.symbol,
+message-item .token.number,
+message-item .token.boolean,
+message-item .token.variable,
+message-item .token.constant,
+message-item .token.property,
+message-item .token.regex,
+message-item .token.inserted {
+  color: #36acaa;
+}
+
+message-item .token.atrule,
+message-item .token.keyword,
+message-item .token.attr-name,
+message-item .language-autohotkey .token.selector {
+  color: #00a4db;
+}
+
+message-item .token.function,
+message-item .token.deleted,
+message-item .language-autohotkey .token.tag {
+  color: #9a050f;
+}
+
+message-item .token.tag,
+message-item .token.selector,
+message-item .language-autohotkey .token.keyword {
+  color: #00009f;
+}
+
+message-item .token.important,
+message-item .token.function,
+message-item .token.bold {
+  font-weight: bold;
+}
+
+message-item .token.italic {
+  font-style: italic;
 }
 
 friend-item .img-loaded + ion-spinner {
